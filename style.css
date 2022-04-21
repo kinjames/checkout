@@ -229,7 +229,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,6 +250,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: flex;
         flex-direction: column;
         padding: 30px;
+        overflow-y: hidden;
     }
 	.span_2_of_3, .span_1_of_3 {
 		width: 100%; 
@@ -261,5 +262,9 @@ input[type=number]::-webkit-outer-spin-button {
     .cart {
         padding-bottom: 30px;
         margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
     }
 }
