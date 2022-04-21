@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Page</title>
+
+    <script src="https://kit.fontawesome.com/969ee16a99.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="cart span_1_of_3">
+            <div class="product">
+                <div class="img">
+                    <img src="photo1.png" alt="Photo1">
+                </div>
+                <div class="text">
+                    <p>Vintage bag</p>
+                    <p class="price">&dollar;54.99 <span><strike>&dollar;94.99</strike></span></p>
+                    <form class="inventory">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="product">
+                <div class="img">
+                    <img src="photo2.png" alt="Photo2">
+                </div>
+                <div class="text">
+                    <p>Levi Shoes</p>
+                    <p class="price">&dollar;74.99 <span><strike>&dollar;124.99</strike></span></p>
+                    <form class="inventory">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="total">
+                <p class="total-text">
+                    <span>Shipping</span>
+                    <span>&dollar;19</span>
+                </p>
+                <p class="total-text">
+                    <span>Total</span>
+                    <span>&dollar;148.98</span>
+                </p>
+            </div>
+        </div>
+
+        <form action="" onsubmit="alert('Thanks for your purchase!')" class="contact-information col span_2_of_3">
+
+                <div class="contact">
+                    <h3>Contact information</h3>
+                    <div class="details">
+                        <label for="email"  id="email-label">
+                            <p class="form-para">Email</p>
+                            <input type="email" id="email" class="fontAwesome" placeholder="&#xf0e0;&nbsp;&nbsp; Enter your email.." required>
+                        </label>
+                    </div>
+        
+                    <div class="details">
+                        <label for="number" id="number-label">
+                            <p class="form-para">Phone</p>
+                            <input type="text" id="number1" class="fontAwesome" placeholder="&#xf879;&nbsp;&nbsp;Enter your phone.." required>
+                        </label>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Shipping address</h3>
+                    <div class="details">
+                        <label for="full-name"  id="full-name-label">
+                            <p class="form-para">Full name</p>
+                            <input type="text" id="email" class="fontAwesome" placeholder=" &#xf2bd;&nbsp;&nbsp;Enter your full name.." required>
+                        </label>
+                    </div>
+        
+                    <div class="details">
+                        <label for="address" id="address-label">
+                            <p class="form-para">Address</p>
+                            <input type="text" id="number1" class="fontAwesome" placeholder="&#xf015;&nbsp;&nbsp;Your address..." required>
+                        </label>
+                    </div>
+                    <div class="details">
+                        <label for="city" id="city-label">
+                            <p class="form-para">City</p>
+                            <input type="text" id="city" class="fontAwesome" placeholder="&#xf64f;&nbsp;&nbsp;Your city..." required>
+                        </label>
+                    </div>
+                    <div class="country-code left">
+                        <div class="details">
+                            <p class="form-para">Country</p>
+                            <select name="" id="dropdown" class="fontAwesome" aria-placeholder="&#xf64f;&nbsp;&nbsp;" >
+                                <option disabled selected value="">&#xf57c;&nbsp;&nbsp;Select your Country</option>
+                                <option value="student">Ghana</option>
+                                <option value="Full Time Job">Nigeria</option>
+                                <option value="Full Time Learner">Togo</option>
+                                <option value="Prefer not to say">Benin</option>
+                                <option value="other">Cameroon</option>
+                            </select>
+                        </div>
+                        <div class="details right">
+                            <label for="postal-code" id="postal-code-label">
+                                <p class="form-para">Postal code</p>
+                                <input type="text" id="number1" class="fontAwesome" placeholder="&#xf7e1;&nbsp;&nbsp;Your postal code..." required>
+                            </label>
+                        </div>
+                    </div>
+                    <label for="save-info">
+                        <input type="checkbox">
+                        <span>Save the information for next time.</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Continue</button>
+        </form>
+        <div class="clear-fix"></div>
+
+
+        <footer class="footer">
+            <a href="https://github.com/kinjames">Created by James Kofi Myers - devChallenges.io</a>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
